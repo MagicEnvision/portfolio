@@ -1,1 +1,1 @@
-# portfolio
+# This is my career portfolio containing all my projects, that showcase my skills. I hope you enjoy!
