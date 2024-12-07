@@ -1,1 +1,1 @@
-# portfolio
+# This is a showcase of my skills and talents that Ive learned over the years. My first OFFICAL programming portfolio.
