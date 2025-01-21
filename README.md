@@ -1,1 +1,1 @@
-# This is a showcase of my skills and talents that Ive learned over the years. My first OFFICAL programming portfolio.
+This will be the epic joourny of my full stack portfolio using reactjs 
