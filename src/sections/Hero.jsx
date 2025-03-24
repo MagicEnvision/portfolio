@@ -1,16 +1,45 @@
 import React from 'react'
+import * as THREE from 'three';
 
 const Hero = () => {
+
+  const loader = new THREE.ObjectLoader();
+
+  loader.load(
+      // resource URL
+      "models/json/example.json",
+
+      // onLoad callback
+      // Here the loaded data is assumed to be an object
+      function ( obj ) {
+        // Add the loaded object to the scene
+        scene.add( obj );
+      },
+
+      // onProgress callback
+      function ( xhr ) {
+        console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+      },
+
+      // onError callback
+      function ( err ) {
+        console.error( 'An error happened' );
+      }
+  );
+
+
+// Alternatively, to parse a previously loaded JSON structure
+  const object = loader.parse( a_json_object );
+
+  scene.add( object );
+
   return (
     <>
-    <div className='flex text-center justify-center min-h-screen overflow-y-hidden md:flex-row flex-col mr-22 text-white flex-1 w-full'>
+    <div className='container w-full p-5 '>
+      <div className=''>
 
-      <div className='border-2 flex-grow rounded-tl-3xl rounded-br-3xl rounded-bl-sm rounded-tr-md border-neutral-800 bg-neutral-900 p-5 m-5'>
-      <h1 className='text-white'>My Favourite Tech Stack</h1>
-      <img src="" alt="" />
-      <p>MERN </p>
+
       </div>
-
 
     </div>
     </>
