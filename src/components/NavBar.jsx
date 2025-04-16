@@ -8,7 +8,7 @@ const NavBar = () => {
   };
   return (
     <div>
-      <div className="border-[2px] bg-neutral-900 border-neutral-800 w-full flex h-[42px] mt-4 rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl  ">
+      <div className="border-[2px] bg-neutral-900 border-neutral-800 w-full flex h-[42px] mt-4 mb-4 rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl  ">
         <div className="container flex  justify-center items-center px-6">
           <h1 className="text-white font-bold tracking-widest">Web Development Portfolio <span className="-tracking-tighter font-thin">by Rj Rose</span></h1>
 
