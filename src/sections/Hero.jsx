@@ -6,7 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+
+
 const Hero = () => {
+  
   const handleMouseMove = (e) => {
     e.currentTarget.play()
   }
@@ -14,10 +17,29 @@ const Hero = () => {
   const handleMouseLeave = (e) => {
     e.currentTarget.pause()
   }
+  useGSAP(() => {
+    gsap.from("#firstRow div", {
+      y: 100,
+      opacity: 1,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power3.out",
+    
+    });
+  
+    gsap.from("#second-row div", {
+      y: 100,
+      opacity: 1,
+      stagger: 0.2,
+      duration: 1,
+      ease: "power3.out",
+    
+    });
+  });
 
   return (
     <section className="w-full ">
-      <div className="flex gap-5 flex-wrap sm:flex-nowrap justify-center">
+      <div className="flex gap-5 flex-wrap sm:flex-nowrap justify-center" id="firstRow">
         {[
           { title: "Awwards Winning Website", src: "/1.mkv", subTitle: "Using three.js, gsap.js, react." },
           { title: "Apple iPhone Website Clone", src: "/2.mkv", subTitle: "Using three.js, gsap.js, react."}
@@ -44,7 +66,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
-      <div className="flex gap-5 mt-6 justify-center">
+      <div className="flex gap-5 mt-6 justify-center" id="second-row">
         {[
           { title: "Awwards Winning Website", src: "/1.mkv", subTitle: "Using three.js, gsap.js, react." },
           { title: "Apple iPhone Website Clone", src: "/2.mkv", subTitle: "Using three.js, gsap.js, react."}
