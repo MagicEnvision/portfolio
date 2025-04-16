@@ -4,8 +4,8 @@ function App() {
 
   return (
     <>
-   <div className='flex flex-start h-[1000px] justify-center bg-neutral-950 px-4'>
-    <div className='container'>
+   <div className='flex flex-start h-full justify-center bg-neutral-950 pb-[1000px] px-4'>
+    <div className=''>
     <NavBar /> 
     <Hero /> 
     </div>
