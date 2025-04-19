@@ -18,23 +18,29 @@ const Hero = () => {
     e.currentTarget.pause()
   }
   useGSAP(() => {
-    gsap.from("#firstRow div", {
-      y: 100,
-      opacity: 1,
-      stagger: 0.2,
-      duration: 1,
-      ease: "power3.out",
+    // gsap.from("#firstRow div", {
+    //   y: 100,
+    //   opacity: 1,
+    //   stagger: 0.2,
+    //   duration: 1,
+    //   ease: "power3.out",
     
-    });
+    // });
   
-    gsap.from("#second-row div", {
-      y: 100,
-      opacity: 1,
-      stagger: 0.2,
-      duration: 1,
-      ease: "power3.out",
+    // gsap.from("#second-row div", {
+    //   y: 100,
+    //   opacity: 1,
+    //   stagger: 0.2,
+    //   duration: 1,
+    //   ease: "power3.out",
     
-    });
+    // });
+    gsap.to('#firstRow div', {
+      x: 0,
+      pin: true,
+      start: 'top top', // when the top of the trigger hits the top of the viewport
+        end: '+=500', // end after scrolling 500px beyond the start
+    })
   });
 
   return (
@@ -46,7 +52,7 @@ const Hero = () => {
         ].map((card, idx) => (
           <div
             key={idx}
-            className="w-full md:w-1/2 border-2 bg-neutral-900 border-neutral-800 hover:scale-95 hover:z-10 transform transition duration-300 ease-in-out h-[500px] rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl"
+            className="w-full md:w-1/2 border-2 cursor-pointer hover:focus-visible: bg-neutral-900 border-neutral-800 hover:scale-95 hover:z-10 transform transition duration-300 ease-in-out h-[500px] rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl"
           >
             <div className="p-4 w-full h-full flex flex-col overflow-hidden">
               <h1 className="text-white text-3xl tracking-tight font-bold">
@@ -73,7 +79,7 @@ const Hero = () => {
         ].map((card, idx) => (
           <div
             key={idx}
-            className="w-full md:w-1/2 border-2 bg-neutral-900 border-neutral-800 hover:scale-95 hover:z-10 transform transition duration-300 ease-in-out h-[500px] rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl"
+            className="w-full md:w-1/2 border-2 cursor-pointer hover:focus-visible: bg-neutral-900 border-neutral-800 hover:scale-95 hover:z-10 transform transition duration-300 ease-in-out h-[500px] rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl"
           >
             <div className="p-4 w-full h-full flex flex-col overflow-hidden">
               <h1 className="text-white text-3xl tracking-tight font-bold">
