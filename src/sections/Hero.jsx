@@ -18,29 +18,24 @@ const Hero = () => {
     e.currentTarget.pause()
   }
   useGSAP(() => {
-    // gsap.from("#firstRow div", {
-    //   y: 100,
-    //   opacity: 1,
-    //   stagger: 0.2,
-    //   duration: 1,
-    //   ease: "power3.out",
-    
-    // });
-  
-    // gsap.from("#second-row div", {
-    //   y: 100,
-    //   opacity: 1,
-    //   stagger: 0.2,
-    //   duration: 1,
-    //   ease: "power3.out",
-    
-    // });
-    gsap.to('#firstRow div', {
-      x: 0,
-      pin: true,
-      start: 'top top', // when the top of the trigger hits the top of the viewport
-        end: '+=500', // end after scrolling 500px beyond the start
+    let tl = gsap.timeline({
+
     })
+
+    tl.from('#firstRow', {
+      delay: 1.5,
+      x:800
+    })
+    tl.from('#secondRow', {
+      delay: 1.5,
+      x:-800
+    })
+
+    // gsap.to('#firstRow div', {
+    //   pin: true,
+    //   start: 'top top', // when the top of the trigger hits the top of the viewport
+    //     end: '+=500', // end after scrolling 500px beyond the start
+    // })
   });
 
   return (
@@ -72,7 +67,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
-      <div className="flex gap-5 mt-6 justify-center" id="second-row">
+      <div className="flex gap-5 mt-6 justify-center" id="secondRow">
         {[
           { title: "Awwards Winning Website", src: "/1.mkv", subTitle: "Using three.js, gsap.js, react." },
           { title: "Apple iPhone Website Clone", src: "/2.mkv", subTitle: "Using three.js, gsap.js, react."}

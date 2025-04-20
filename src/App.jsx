@@ -5,7 +5,7 @@ function App() {
   return (
     <>
    <div className='flex flex-start h-full justify-center bg-neutral-950 pb-[1000px] px-4'>
-    <div className=''>
+    <div className='container'>
     <NavBar /> 
     <Hero /> 
     </div>
