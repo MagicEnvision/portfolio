@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import Lenis from "lenis";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -17,20 +18,35 @@ const Hero = () => {
   const handleMouseLeave = (e) => {
     e.currentTarget.pause()
   }
+
+ // Initialize Lenis
+const lenis = new Lenis();
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#firstRow',
+    start:'top top' ,
+    end: 'bottom bottom',
+    scrub: true,
+    markers:true
+  }
+
+})
+
   useGSAP(() => {
-    let tl = gsap.timeline({
-
-    })
-
-    tl.from('#firstRow', {
-      delay: 1.5,
+    tl.to('#firstRow', {
       x:800
     })
-    tl.from('#secondRow', {
-      delay: 1.5,
+    tl.to('#secondRow', {
       x:-800
     })
-
+ 
     // gsap.to('#firstRow div', {
     //   pin: true,
     //   start: 'top top', // when the top of the trigger hits the top of the viewport

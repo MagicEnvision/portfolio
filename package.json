@@ -15,6 +15,7 @@
     "@react-three/eslint-plugin": "^0.1.2",
     "@react-three/fiber": "^9.1.0",
     "gsap": "^3.12.7",
+    "lenis": "^1.2.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "three": "^0.174.0"
