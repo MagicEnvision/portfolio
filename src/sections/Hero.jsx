@@ -44,18 +44,14 @@ let tl = gsap.timeline({
       x:800
     })
     tl.to('#secondRow', {
+      
       x:-800
     })
- 
-    // gsap.to('#firstRow div', {
-    //   pin: true,
-    //   start: 'top top', // when the top of the trigger hits the top of the viewport
-    //     end: '+=500', // end after scrolling 500px beyond the start
-    // })
   });
 
   return (
-    <section className="w-full ">
+    <section className="w-full overflow-x">
+
       <div className="flex gap-5 flex-wrap sm:flex-nowrap justify-center" id="firstRow">
         {[
           { title: "Awwards Winning Website", src: "/1.mkv", subTitle: "Using three.js, gsap.js, react." },
@@ -110,6 +106,7 @@ let tl = gsap.timeline({
           </div>
         ))}
       </div>
+   
     </section>
     
   );
