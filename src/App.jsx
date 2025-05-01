@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar'
 import Hero from './sections/Hero'
+import ModelView from './sections/ModelView'
 function App() {
 
   return (
@@ -8,6 +9,7 @@ function App() {
     <div className=''>
     <NavBar /> 
     <Hero /> 
+    <ModelView />
     </div>
    </div>
     </>

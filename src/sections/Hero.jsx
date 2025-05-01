@@ -5,6 +5,7 @@ import * as THREE from 'three'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
+
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
@@ -49,8 +50,6 @@ let tl = gsap.timeline({
     })
   });
 
-  const scene = new THREE.Scene();
-  const camera = THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1 , 1000)
   return (
     <section className="w-full overflow-x">
 
@@ -108,7 +107,6 @@ let tl = gsap.timeline({
           </div>
         ))}
       </div>
-        <div className="w-full border-2 border-red-600 h-[100px]"></div>
     </section>
     
   );
