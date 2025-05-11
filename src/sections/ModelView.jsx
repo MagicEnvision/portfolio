@@ -7,24 +7,33 @@ import Magic from './Magic'
 
 const ModelView = () => {
   return (
-    <div className=" h-[60dvh] pt-5">
-        
-    <Canvas  
-     camera={{ position: [0, -2, 4], fov: 120 }}
-    >
-        <ambientLight intensity={1}/>
-           <OrbitControls enableZoom={false}
-              minPolarAngle={Math.PI / -3} // tilt limit (down)
-              maxPolarAngle={Math.PI / 0} // tilt limit (up)
-             minAzimuthAngle={-Math.PI / 14} // horizontal left limit
-             maxAzimuthAngle={Math.PI / 14}  // horizontal right limit
-             />
-          <Suspense fallback={null}>
-            <Magic />
-          </Suspense>
-          <Environment preset='dawn'/>
-        </Canvas>
+    <div className="h-[60dvh] pt-5">
+      <Canvas camera={{ position: [0, -2, 4], fov: 130 }}>
+        {/* Ambient Light (soft global illumination) */}
+        <ambientLight intensity={0.5} />
 
+        {/* Directional Light (main shadow-casting light) */}
+        <directionalLight
+          position={[-5, 2, 12]} // coming from top-right-front
+          intensity={10}
+          castShadow
+          shadow-mapSize-width={1024}
+          shadow-mapSize-height={1024}
+        />
+
+        <Suspense fallback={null}>
+          <Magic />
+          <Environment preset="studio" />
+        </Suspense>
+
+        <OrbitControls
+          enableZoom={false}
+          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 1.5}
+          minAzimuthAngle={-Math.PI / 18}
+          maxAzimuthAngle={Math.PI / 20}
+        />
+      </Canvas>
     </div>
   )
 }

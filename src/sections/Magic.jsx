@@ -9,7 +9,7 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/magic.glb')
   return (
 
-    <group {...props} scale={1} dispose={null}
+    <group {...props} scale={1.3} dispose={null}
       rotation={[Math.PI / 2, 0, 0]} >
       {/* <mesh
         castShadow

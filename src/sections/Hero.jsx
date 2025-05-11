@@ -51,7 +51,7 @@ let tl = gsap.timeline({
   });
 
   return (
-    <section className="w-full overflow-x">
+    <section className="w-full">
 
       <div className="flex gap-5 flex-wrap sm:flex-nowrap justify-center" id="firstRow">
         {[
