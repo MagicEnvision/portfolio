@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import Lenis from "lenis";
 import * as THREE from 'three'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ModelView from "./ModelView";
 
 
 
@@ -32,27 +33,34 @@ requestAnimationFrame(raf);
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: '#firstRow',
-    start:'top top' ,
-    end: 'bottom bottom',
+    start: 'top top',
+    end: '',
     scrub: true,
     markers:true
   }
-
 })
-
+let tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#secondRow',
+    start: 'top',
+    end: '',
+    scrub: true,
+    markers:true
+  }
+})
   useGSAP(() => {
     tl.to('#firstRow', {
-      x:800
+      delay: 0.05,
+      x:3000
     })
-    tl.to('#secondRow', {
-      
-      x:-800
+    tl2.to('#secondRow', {
+      delay: 0.3,
+      x:-3000
     })
   });
 
   return (
-    <section className="w-full">
-
+    <section className="w-full overflow-x-hidden ">
       <div className="flex gap-5 flex-wrap sm:flex-nowrap justify-center" id="firstRow">
         {[
           { title: "Awwards Winning Website", src: "/1.mkv", subTitle: "Using three.js, gsap.js, react." },
@@ -107,6 +115,16 @@ let tl = gsap.timeline({
           </div>
         ))}
       </div>
+      <div className="border-2 border-red">
+      <ModelView />
+      <div className="border-2 h-[300px]">
+        <h1>Hello World</h1>
+        <p></p>
+
+      </div>
+      </div>
+      
+
     </section>
     
   );

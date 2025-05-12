@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 
+import {MarkGithubIcon} from '@primer/octicons-react'
+import { FaApper, FaLinkedin, FaPaperclip } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa6";
+
+
+<MarkGithubIcon size={24} />
+const  renderToolTip = () => {
+  return '<h1>Hello Word</h1> '
+}
+
 const NavBar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -9,8 +19,8 @@ const NavBar = () => {
   return (
     <div>
       <div className="border-[2px] bg-neutral-900 border-neutral-800 w-full flex h-[42px] mt-4 mb-4 rounded-tl-3xl rounded-bl-md rounded-tr-md rounded-br-3xl  ">
-        <div className="container flex  justify-center items-center px-6">
-          <h1 className="text-white font-bold tracking-widest">Web Development Portfolio <span className="-tracking-tighter font-thin">by Rj Rose</span></h1>
+        <div className="container flex  justify-between items-center px-6">
+          <h1 className="text-white font-bold tracking-widest mx-6 ">Web Development Portfolio <span className="-tracking-tighter font-thin">by Rj Rose</span></h1>
 
           {/* <div
             className={`cursor-pointer md:hidden  transform duration-1000 ${
@@ -34,6 +44,14 @@ const NavBar = () => {
               rounded-bl-lg rounded-tr-lg rounded-br-3xl hover:shadow
             hover:shadow-neutral-400 flex items-center justify-center px-[12px] mx-4 '>Social</li> 
           </ul> */}
+          <ul onMouseEnter={renderToolTip()}  className="flex gap-5 mx-6">
+            <li ><MarkGithubIcon size={24} className="text-white"/></li>
+            <li><FaLinkedin size={24} className="text-white"/></li>
+            <li><FaSchool size={24} className="text-white"/></li>
+            <li><FaPaperclip size={24} className="text-white"/></li>
+
+          </ul>
+
         </div>
       </div>
     </div>
