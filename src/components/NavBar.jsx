@@ -45,10 +45,10 @@ const NavBar = () => {
             hover:shadow-neutral-400 flex items-center justify-center px-[12px] mx-4 '>Social</li> 
           </ul> */}
           <ul onMouseEnter={renderToolTip()}  className="flex gap-5 mx-6">
-            <li ><MarkGithubIcon size={24} className="text-white"/></li>
-            <li><FaLinkedin size={24} className="text-white"/></li>
-            <li><FaSchool size={24} className="text-white"/></li>
-            <li><FaPaperclip size={24} className="text-white"/></li>
+            <li><a href=""><MarkGithubIcon size={24} className="text-white"/></a></li>
+            <li><a href="https://www.linkedin.com/in/rj-rose-484070268/?originalSubdomain=ca"><FaLinkedin size={24} className="text-white"/></a></li>
+            <li><a href=""><FaSchool size={24} className="text-white"/></a></li>
+            <li><a href=""><FaPaperclip size={24} className="text-white"/></a></li>
 
           </ul>
 
