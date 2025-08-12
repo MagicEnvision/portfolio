@@ -25,7 +25,7 @@ export default function Model(props) {
         castShadow
         receiveShadow
         geometry={nodes.path44001.geometry}
-        material={new THREE.MeshStandardMaterial({ color: '#171717' })} // slate grey
+        material={new THREE.MeshStandardMaterial({ color: '#8B0000' })} // slate grey
         position={[0, 0, -0.6]}
         scale={[46.727, 1, 46.727]}
       />

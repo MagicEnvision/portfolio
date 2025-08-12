@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import Lenis from "lenis";
 import * as THREE from 'three'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ModelView from "./ModelView";
+import ModelView from "../components/ModelView";
 
 
 
@@ -115,8 +115,7 @@ let tl2 = gsap.timeline({
           </div>
         ))}
       </div>
-      <div className="border-2 border-red">
-      <ModelView />
+      <div className="">
       <div className="border-2 h-[300px]">
         <h1>Hello World</h1>
         <p></p>
