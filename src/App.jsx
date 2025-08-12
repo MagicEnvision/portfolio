@@ -1,13 +1,25 @@
 import NavBar from './components/NavBar'
 import Hero from './sections/Hero'
 import ModelView from './components/ModelView'
+import React from 'react'
+import { useState, useEffect } from 'react'
 function App() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if(window.innerWidth >= 640) setIsMobile(!isMobile)
+
+  //   window.addEventListener('resize', handleResize);
+  //   return () => window.removeEventListener('resize', handleResize);
+  //   }
+  // }, [isMobile])
 
   return (
     <>
-   <div className='flex flex-start h-[100dvh] justify-between align-center text-white  gap-5 bg-neutral-800 pl-4 '>
-
-    <div className='flex flex-grow-[1] bg-gradient-to-b from-neutral-600 to-neutral-800 justify-center rounded-[2rem] p-[1px] relatiive my-4'>
+   <div className={`sm:flex sm:flex-start min-h-screen text-white sm:gap-5 bg-[#060606] sm:pl-4 p-4 `}>
+    
+    <div className='hidden sm:flex sm:w-[20vw] bg-gradient-to-b from-neutral-600 to-neutral-800 justify-center rounded-[2rem] p-[1px] relative my-4'>
     <ul className='flex flex-col justify-center box-border w-full items-center bg-neutral-950 p-4 rounded-[2rem]'>
       <li className=''><p>hellow</p></li>
        <li><p>hellow</p></li>
@@ -18,9 +30,9 @@ function App() {
     </ul>
     </div>
 
-    <div className='flex flex-grow-[7] bg-gradient-to-b from-neutral-600 to-neutral-800 justify-center rounded-[2rem] p-[1px] relatiive mt-6 mb-6 mr-6'>
-    <div className='w-full bg-neutral-950 rounded-[2rem] box-border'>
-
+    <div className='flex w-full h-screen sm:h-auto sm:w-[80vw] bg-gradient-to-b from-neutral-600 to-neutral-800 justify-center rounded-[2rem] p-[1px]  sm:my-4 sm:mr-6'>
+    <div className='w-full h-full bg-neutral-950 rounded-[2rem] p-5'>
+     {`section 2 `}
     </div>
     </div>
    
