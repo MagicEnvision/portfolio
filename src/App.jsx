@@ -20,7 +20,7 @@ function App() {
   //   return () => window.removeEventListener('resize', handleResize);
   //   }
   // }, [isMobile])
-  const  [activePage, setActivePage] = useState("me")
+  const  [activePage, setActivePage] = useState("magic")
 
   return (
     <>

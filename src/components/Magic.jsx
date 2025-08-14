@@ -10,9 +10,9 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/magic.glb')
   return (
 
-    <group {...props} scale={0.8} dispose={null}
+    <group {...props} scale={4} dispose={null}
       rotation={[Math.PI / 2, 0, 0]} >
-      {/* <mesh
+       {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.path44.geometry}
@@ -20,14 +20,14 @@ export default function Model(props) {
 
         position={[0, 0, -0.6]}
         scale={[46.727, 1, 46.727]}
-      />  */}
+      />   */}
       <mesh 
         castShadow
         receiveShadow
         geometry={nodes.path44001.geometry}
-        material={new THREE.MeshStandardMaterial({ color: '#0b0b08' })} // slate grey
-        position={[0, 0, -5]}
-        scale={[46.727, 1, 46.727]}
+        material={new THREE.MeshStandardMaterial({ color: '#0b0b0b' })} // slate grey
+        position={[0, 0, 0]}
+        scale={[5, 0.1, 5]}
       />
     
     </group>
