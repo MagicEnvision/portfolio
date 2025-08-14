@@ -7,6 +7,7 @@ import WhatIDo from './components/WhatIDo'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 import Magicenvision from './components/Magicenvision'
+import './index.css'
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 
     <div className='flex w-full h-screen sm:h-auto sm:w-[80vw] bg-gradient-to-b
      from-neutral-600 to-neutral-800 justify-center rounded-[2rem] p-[1px] sm:my-4  '>
-    <div className='w-full h-full bg-neutral-950 rounded-[2rem] p-5'>
+    <div className='w-full h-full bg-neutral-950 rounded-[2rem] p-5 overflow-hidden overflow-y-auto '>
      { activePage === "me" && <WhatIDo /> }
      { activePage === "projects" && <Projects /> }
      { activePage === "contact" && <Contact /> }

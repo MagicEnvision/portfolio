@@ -6,7 +6,7 @@ import Magic from './Magic'
 import { useState } from 'react'
 
 
-const ModelView = ({navClick}) => {
+const ModelView = ({}) => {
   
   const [autoRotate, setAutoRotate] = useState(true);
 
@@ -23,7 +23,7 @@ const ModelView = ({navClick}) => {
   };  
 
   return (
-    <div className={`${navClick} h-[500px] w-[500px]  `}>
+    <div className={` mx-auto sm:m-0 border-2 border-white h-[200px] w-[300px] sm:h-[500px] sm:w-[600px]  `}>
       <Canvas  >
         <ambientLight intensity={0.5} /> 
 
@@ -38,7 +38,10 @@ const ModelView = ({navClick}) => {
           autoRotateSpeed={3}
           dampingFactor={0.05}
           enableZoom={false}
-          target={[0, 0, 0]} 
+          minPolarAngle={Math.PI / 2.3}
+          maxPolarAngle={Math.PI /1.5 }
+          minAzimuthAngle={Math.PI / 4}
+          maxAzimuthAngle={Math}
         
           onPointerDown={handlePointerDown} // Listen for user input
           onPointerUp={handlePointerUp}   // Listen for user input
