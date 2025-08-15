@@ -23,8 +23,9 @@ const ModelView = ({}) => {
   };  
 
   return (
-    <div className={` mx-auto sm:m-0 border-[1px] rounded-[2rem] border-neutral-700 shadow-[0px_0px_5px_0px_#EDEDED] h-[200px] w-[300px] sm:h-[500px] sm:w-[600px]  `}>
-      <Canvas  >
+    <div className={` mx-auto sm:m-0 border-[1px] rounded-[2rem] border-neutral-700
+     hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 h-[200px] md:h-[300px] col-span-2 row-span-2`}>
+      <Canvas  > 
         <ambientLight intensity={0.5} /> 
 
         <Suspense fallback={null}>

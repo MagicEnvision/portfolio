@@ -3,21 +3,34 @@ import ModelView from './ModelView.jsx'
 
 const MagicEnvision = () => {
   return (
-   <div className='flex flex-col md:flex-row flex-wrap sm:gap-5  '>
+   <div className='grid grid-cols-3 gap-6  grid-rows-2  sm:m-6 '>
       <ModelView />
-      <div className='border-[1px] sm:h-[250px] rounded-[2rem] border-neutral-700 shadow-[0px_0px_5px_0px_#EDEDED] flex-grow '>
-       <div className='p-3'>
-        <h1 className='text-4xl text-center font-oswald font-extrabold italic'>
+
+       <div className='border-[1px] flex justify-center flex-col rounded-[2rem] border-neutral-700 
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 gap-0 h-auto  '>
+        <h1 className='text-3xl text-center font-oswald font-extrabold sm:text-md italic '>
           Magic Envision  <span className='text-xl font-extralight'>{''}Clothing Brand</span><br/>
           </h1>
-          <div className='border-t-[1px] border border-neutral-600 mt-2'></div>
+          <div className='border-t-[1px] border border-neutral-600 mt-2'/>
            <span className='text-center text-2xl not-italic font-extralight font-oswald '>
-           <p> In my sparetime 
-          i love to create design, create, and<br /> manufacture my own clothing.
-          Started my sewing <br /> journey in 2020 and Ive enjoyed it ever since. </p>
+           <p className='text-lg py-1 px-2 '> In my sparetime 
+          i love to create design, create, and manufacture my own clothing.
+          Started my sewing  journey in 2020 and Ive enjoyed it ever since. </p>
           </span>
-       </div>
-      </div>
+      </div> 
+      <div className='border-[1px] flex justify-center flex-col rounded-[2rem] border-neutral-700 
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 gap-0 h-auto  '>
+        <h1 className='text-3xl text-center font-oswald font-extrabold sm:text-md italic '>
+          Magic Envision  <span className='text-xl font-extralight'>{''}Clothing Brand</span><br/>
+          </h1>
+          <div className='border-t-[1px] border border-neutral-600 mt-2'/>
+           <span className='text-center text-2xl not-italic font-extralight font-oswald '>
+           <p className='text-lg py-1 px-2 '> In my sparetime 
+          i love to create design, create, and manufacture my own clothing.
+          Started my sewing  journey in 2020 and Ive enjoyed it ever since. </p>
+          </span>
+      </div> 
+
       
       
    </div>
