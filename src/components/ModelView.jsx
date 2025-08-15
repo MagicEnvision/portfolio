@@ -23,7 +23,7 @@ const ModelView = ({}) => {
   };  
 
   return (
-    <div className={` mx-auto sm:m-0 border-2 border-white h-[200px] w-[300px] sm:h-[500px] sm:w-[600px]  `}>
+    <div className={` mx-auto sm:m-0 border-[1px] rounded-[2rem] border-neutral-700 shadow-[0px_0px_5px_0px_#EDEDED] h-[200px] w-[300px] sm:h-[500px] sm:w-[600px]  `}>
       <Canvas  >
         <ambientLight intensity={0.5} /> 
 
