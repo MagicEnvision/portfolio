@@ -6,7 +6,7 @@ import Magic from './Magic'
 import { useState } from 'react'
 
 
-const ModelView = ({}) => {
+const ModelView = ({className}) => {
   
   const [autoRotate, setAutoRotate] = useState(true);
 
@@ -23,8 +23,7 @@ const ModelView = ({}) => {
   };  
 
   return (
-    <div className={`  sm:m-0 border-[1px] rounded-[2rem] border-neutral-700
-     hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 col-span-2 row-span-2`}>
+    <div className={className}>
       <Canvas  > 
         <ambientLight intensity={0.5} /> 
 
