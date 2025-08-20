@@ -16,11 +16,11 @@ function App() {
             <li className="cursor-pointer " onClick={() => setActivePage("me")}>What I Do</li>
             <li className="cursor-pointer " onClick={() => setActivePage("projects")}><p>Projects</p></li>
             <li className="cursor-pointer " onClick={() => setActivePage("contact")}><p>Contact Me</p></li>
-            <li className="cursor-pointer " onClick={() => setActivePage("magic")}><p>Side Hobbies</p></li>
+            <li className="cursor-pointer " onClick={() => setActivePage("magic")}><p>Clothing Brand</p></li>
           </ul>
         </div>
-        <div className="flex w-full border-[1px] border-neutral-700 justify-center rounded-[2rem] my-4 overflow-y-auto">
-          <div className="w-full h-screen bg-neutral-950 rounded-[2rem] flex flex-col items-center">
+        <div className="flex w-full border-[1px] bg-neutral-950 border-neutral-700 justify-center rounded-[2rem] my-4 overflow-y-auto">
+          <div className="w-full h-screen  rounded-[2rem] flex flex-col items-center">
             {activePage === "me" && <WhatIDo />}
             {activePage === "projects" && <Projects />}
             {activePage === "contact" && <Contact />}
