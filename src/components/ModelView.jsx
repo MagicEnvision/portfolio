@@ -24,7 +24,8 @@ const ModelView = ({className}) => {
 
   return (
     <div className={className}>
-      <Canvas  > 
+      <Canvas >
+   
         <ambientLight intensity={0.5} /> 
 
         <Suspense fallback={null}>

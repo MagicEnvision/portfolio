@@ -3,14 +3,13 @@ import ModelView from "./ModelView.jsx";
 
 const MagicEnvision = () => {
   return (
-    <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3  sm:grid-rows-2 gap-6  m-6">
+    <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3  sm:grid-rows-4 gap-6 py-5 m-6">
       <ModelView
         className={`sm:m-0 border-[1px] rounded-[2rem] border-neutral-700
-           hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 col-span-2 row-span-2`}
+           hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 bg-[#060606] col-span-2 row-span-2`}
       />
-      <div
-        className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
-       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full py-1 px-1 sm:py-2 sm:px-2">
+      <div className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full py-1 px-1 sm:py-2 sm:px-2  bg-[#060606] col-span-1 row-span-1">
         <h1 className="text-lg  text-center font-oswald font-extrabold italic sm:text-xl">
           Magic Envision{" "}
           <span className="text-md sm:text-xl font-extralight">{""}Clothing Brand</span>
@@ -27,12 +26,38 @@ const MagicEnvision = () => {
         </span>
       </div>
       <div
-        className="flex justify-center flex-col border-[1px] rounded-[2rem] border-neutral-700 
+        className="flex justify-center flex-col border-[1px] rounded-[2rem] bg-[#060606]  border-neutral-700 
        hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full"
       >
         <ModelView className={`sm:m-0  col-span-1 row-span-1`} />
       </div>
+      
+      <div
+        className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full py-1 px-1 sm:py-2 sm:px-2  col-span-1 row-span-2 bg-[#060606] ">
+        <h1 className="text-lg  text-center font-oswald font-extrabold italic sm:text-xl ">
+          PlaceHolder
+        </h1>
+      </div>
+      <div
+        className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full py-1 px-1 sm:py-2 sm:px-2  col-span-1 row-span-2 bg-[#060606] ">
+        <h1 className="text-lg  text-center font-oswald font-extrabold italic sm:text-xl ">
+          PlaceHolder
+        </h1>
+      </div>
+      <div
+        className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full py-1 px-1 sm:py-2 sm:px-2  col-span-1 row-span-2 bg-[#060606] ">
+        <h1 className="text-lg  text-center font-oswald font-extrabold italic sm:text-xl ">
+          PlaceHolder
+        </h1>
+      </div>
+    
+        
     </div>
+    
+   
   );
 };
 
