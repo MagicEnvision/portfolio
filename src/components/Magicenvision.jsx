@@ -3,7 +3,7 @@ import ModelView from "./ModelView.jsx";
 
 const MagicEnvision = () => {
   return (
-    <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3  sm:grid-rows-5 gap-6 py-5 m-6">
+    <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:grid-rows-5 gap-6 py-5 m-6">
       <ModelView
         className={`sm:m-0 border-[1px] rounded-[2rem] border-neutral-700
            hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 bg-[#060606] col-span-2 row-span-2`}

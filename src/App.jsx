@@ -6,7 +6,7 @@ import Magicenvision from './components/Magicenvision';
 import './index.css';
 
 function App() {
-  const [activePage, setActivePage] = useState("magic");
+  const [activePage, setActivePage] = useState("me");
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#060606] p-1">
@@ -20,7 +20,7 @@ function App() {
           </ul>
         </div>
         <div className="flex w-full border-[1px] bg-neutral-950 border-neutral-700 justify-center rounded-[2rem] my-4 overflow-y-auto">
-          <div className="w-full h-screen  rounded-[2rem] flex flex-col items-center">
+          <div className="w-full h-screen  rounded-[2rem] flex flex-col items-center p-6">
             {activePage === "me" && <WhatIDo />}
             {activePage === "projects" && <Projects />}
             {activePage === "contact" && <Contact />}
