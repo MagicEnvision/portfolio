@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "motion/react";
 const WhatIDo = () => {
   return (
     <div className="flex flex-nowrap items-center gap-10 w-full border-[1px] bg-[#060606] p-8 overflow-hidden rounded-[2rem] border-neutral-700 ">
@@ -8,13 +8,33 @@ const WhatIDo = () => {
       </div>
 
       <div className="flex flex-col  h-[200px] p-1">
-        <h1 className="text-xl flex justify-between">
-          <span className="text-2xl font-bold italic tracking-tighter">
+        <h1
+          className="text-xl flex justify-between"
+          >
+          <motion.span 
+          className="text-2xl font-bold italic tracking-tighter"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.2, bounce: 0.2 },
+          }}
+        >
             Hi, My Name is Rj{" "}
-          </span>
-          <span className="text-2xl font-bold italic">
+          </motion.span>
+          <motion.span 
+          className="text-2xl font-bold italic"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1, }}
+          transition={{
+            delay: 0.35,
+            duration: 0.4,
+            scale: { type: "spring", visualDuration: 0.2, bounce: 0.2 },
+          }}
+        
+          >
             Full Stack Web Enthusiast
-          </span>
+          </motion.span>
         </h1>
         <div className="w-full border-t-[1px] my-2" />
         <div />
@@ -27,7 +47,7 @@ const WhatIDo = () => {
             with a degree in{" "}
             <span className="font-semibold">Computer Science</span>
             and have been working as a{" "}
-            <span className="font-semibold">React full-stack developer {" "}</span>
+            <span className="font-semibold">React full-stack developer </span>
             for the past 3 years. I specialize in building modern, responsive,
             and scalable web applications while focusing on clean code and
             user-friendly experiences. I’m passionate about learning new
