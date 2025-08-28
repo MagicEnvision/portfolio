@@ -2,9 +2,10 @@ import React from "react";
 import { motion } from "motion/react";
 const WhatIDo = () => {
   return (
-    <div className="flex flex-nowrap items-center gap-10 w-full border-[1px] bg-[#060606] p-8 overflow-hidden rounded-[2rem] border-neutral-700 ">
-      <div className="rounded-full flex-none bg-white h-[200px] overflow-hidden w-[200px]">
-        <img src="https://placehold.co/200x200" alt="" />
+    <div className="flex flex-col gap-4">
+       <div className="flex flex-nowrap items-center gap-10 h-[230px] w-full border-[1px] bg-[#060606] py-2 px-6 overflow-hidden rounded-[2rem] border-neutral-700 ">
+      <div className="rounded-full flex-none  bg-white h-[180px] overflow-hidden w-[180px]">
+        <img src="https://placehold.co/180x180" alt="" />
       </div>
 
       <div className="flex flex-col  h-[200px] p-1">
@@ -47,7 +48,7 @@ const WhatIDo = () => {
             with a degree in{" "}
             <span className="font-semibold">Computer Science</span>
             and have been working as a{" "}
-            <span className="font-semibold">React full-stack developer </span>
+            <span className="font-semibold ">React full-stack developer </span>
             for the past 3 years. I specialize in building modern, responsive,
             and scalable web applications while focusing on clean code and
             user-friendly experiences. I’m passionate about learning new
@@ -56,8 +57,17 @@ const WhatIDo = () => {
           </p>
         </div>
       </div>
+      
     </div>
-  );
+    <div className="flex w-full h-[100dvh] gap-4">
+            <div className="border-[1px] border-neutral-700 h-[400px] flex-grow bg-[#060606] rounded-[2rem]">PlaceHolder</div>
+            <div className="border-[1px] border-neutral-700 h-[400px] flex-grow bg-[#060606] rounded-[2rem]">PlaceHolder</div>
+            <div className="border-[1px] border-neutral-700 h-[400px] flex-grow bg-[#060606] rounded-[2rem]">PlaceHolder</div>
+      </div>
+      
+    </div>
+   
+  ); 
 };
 
 export default WhatIDo;

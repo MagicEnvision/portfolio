@@ -19,15 +19,13 @@ const MagicEnvision = () => {
           </span>
           <br />
         </h1>
-        <div className="border-t-[1px] border-neutral-600 mt-2 w-full" />
-        <span className="text-center text-2xl not-italic font-extralight font-oswald ">
-          <p className="text-lg tracking-tight px-2">
+        <div className="border-t-[1px] border-neutral-600 my-2 w-full" />
+          <p className="text-lg leading-6 font-extralight text-center tracking-tight px-2">
             {" "}
-            In my sparetime i love to create design, create, and manufacture my
+            In my sparetime I love to create design, create, and manufacture my
             own clothing. Started my sewing journey in 2020 and Ive loved it
             {" "}
           </p>
-        </span>
       </div>
       <div
         className="flex justify-center flex-col border-[1px] rounded-[2rem] bg-[#060606]  border-neutral-700 
