@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 import Magic from './Magic'
 import { useState } from 'react'
+import Bolts from './Bolts'
 
 
 const ModelView = ({className}) => {
@@ -21,15 +22,16 @@ const ModelView = ({className}) => {
       setAutoRotate(true);
     }, 5000); // Re-enable after 5 seconds of no interaction
   };  
-
+   
+  
   return (
-    <div className={className}>
+    <div className={className }>
       <Canvas >
    
         <ambientLight intensity={0.5} /> 
 
         <Suspense fallback={null}>
-          <Magic />
+         <Bolts />
           <Environment preset="studio" />
         </Suspense> 
 

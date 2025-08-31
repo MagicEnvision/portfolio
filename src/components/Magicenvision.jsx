@@ -7,6 +7,7 @@ const MagicEnvision = () => {
       <ModelView
         className={`sm:m-0 border-[1px] rounded-[2rem] border-neutral-700
            hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 bg-[#060606] col-span-2 row-span-2`}
+    
       />
       <div
         className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
@@ -31,7 +32,7 @@ const MagicEnvision = () => {
         className="flex justify-center flex-col border-[1px] rounded-[2rem] bg-[#060606]  border-neutral-700 
        hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full"
       >
-        <ModelView className={`sm:m-0  col-span-1 row-span-1`} />
+        <ModelView className={`sm:m-0  col-span-1 row-span-1`}  />
       </div>
 
       <div
