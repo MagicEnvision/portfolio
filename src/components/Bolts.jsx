@@ -11,27 +11,27 @@ export default function Model(props) {
         receiveShadow
         geometry={nodes.path1.geometry}
         // material={materials['SVGMat.001']}
-        material={new THREE.MeshStandardMaterial({ color: "#0b0b0b" })} // slate grey
+        material={new THREE.MeshStandardMaterial({ color: "#363636" })} // slate grey
         rotation={[Math.PI / 2, 0, 0]}
-        scale={[25, 1, 25]}
+        scale={[17, 1, 17]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.path2.geometry}
         // material={materials['SVGMat.002']}
-        material={new THREE.MeshStandardMaterial({ color: "#0b0b0b" })} // slate grey
+        material={new THREE.MeshStandardMaterial({ color: "#363636" })} // slate grey
         rotation={[Math.PI / 2, 0, 0]}
-         scale={[25, 1, 25]}
+         scale={[17, 1, 17]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.path3.geometry}
         // material={materials['SVGMat.003']}
-        material={new THREE.MeshStandardMaterial({ color: "#0b0b0b" })} // slate grey
+        material={new THREE.MeshStandardMaterial({ color: "#363636" })} // slate grey
         rotation={[Math.PI / 2, 0, 0]}
-         scale={[25, 1, 25]}
+         scale={[17, 1, 17]}
       />
     </group>
   );
