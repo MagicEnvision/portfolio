@@ -1,7 +1,7 @@
 import React from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Environment, OrbitControls } from '@react-three/drei'
+import { Environment, OrbitControls, Stage } from '@react-three/drei'
 import Magic from './Magic'
 import { useState } from 'react'
 import Bolts from './Bolts'
@@ -26,13 +26,17 @@ const ModelView = ({className}) => {
   
   return (
     <div className={className }>
-      <Canvas >
+      <Canvas shadows dpr={[1, 2]} camera={{fov: 50}}>
    
-        <ambientLight intensity={0.5} /> 
-
+        <ambientLight intensity={1} /> 
+ 
+       
         <Suspense fallback={null}>
-         <Bolts />
-          <Environment preset="studio" />
+           <Stage  preset="rembrandt" intensity={1}  environment="studio">
+            <Magic />
+           </Stage>
+         
+         
         </Suspense> 
 
         <OrbitControls
