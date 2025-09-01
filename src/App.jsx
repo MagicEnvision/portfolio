@@ -10,6 +10,7 @@ import { HiMiniHome } from "react-icons/hi2";
 import { FaFolderClosed } from "react-icons/fa6";
 import { FaFolderOpen } from "react-icons/fa6";
 import { IoMdContact } from "react-icons/io";
+import { FaMagic } from "react-icons/fa";
 
 
 
@@ -26,9 +27,7 @@ function App() {
         if(window.innerWidth < 1100){
           setIsMobile(true);
         }
-        else{
-          setIsMobile(false)
-        }
+       
         
       };
       window.addEventListener('resize', handleResize);
@@ -40,8 +39,8 @@ function App() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#060606] p-1">
-      <div className="flex  sm:flex-row w-full max-w-xs md:max-w-3xl lg:max-w-[90rem] xl:max-w-[100rem] h-full max-h-[95vh] sm:h-auto text-white sm:gap-5">
-        <div className= {`flex ${isMobile ? 'w-[15vw] mr-4' : 'w-[20vw]'}  border-[1px] border-neutral-700 justify-center rounded-[2rem] overflow-hidden my-4`}>
+      <div className="flex  sm:flex-row w-full max-w-xs md:max-w-3xl lg:max-w-[90rem] xl:max-w-[100rem] h-full max-h-[95vh] sm:h-auto text-white gap-3 sm:gap-5">
+        <div className= {`flex ${isMobile ? 'w-[15vw]' : 'w-[20vw]'}  border-[1px] border-neutral-700 justify-center rounded-[2rem] overflow-hidden my-4`}>
           <ul className="flex flex-col justify-between box-border w-full items-center bg-neutral-950  rounded-[2rem]">
 
             <div className='w-full flex flex-col flex-grow'>
@@ -79,14 +78,14 @@ function App() {
                 }
             </li>
               
-            <li className={`flex justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+            <li className={`flex justify-center items-center  border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
              ${activePage === "magic" ? 'bg-white  text-black transition-none' : ''} `} onClick={() => setActivePage("magic")}>
 
               {isMobile ? 
-              (activePage === "magic" ? <img src="/finalLightningBoltLogo.svg" size={24} /> : <img src="/whitebolts.svg" size={24} /> )
+              ( <FaMagic size={24}/> )
                 
               :
-              (<p className='transition duration-300 ease-in-out delay-110 hover:scale-125'>Clothing Brand</p>)
+              (<p className='font-bold font-oswald tracking-tighter transition duration-300 ease-in-out delay-110 hover:scale-125'>Clothing Brand</p>)
                 }
             </li> 
             </div>

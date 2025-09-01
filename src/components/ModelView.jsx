@@ -15,7 +15,7 @@ const ModelView = ({className , model, minPolarAngle, maxPolarAngle, fov }) => {
   // Effect hook to handle window resizing
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 110);
+      setIsMobile(window.innerWidth < 1100);
     };
     window.addEventListener('resize', handleResize);
     return () => {
