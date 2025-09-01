@@ -19,16 +19,14 @@ function App() {
   const [selected, setIsSelected] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
   
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
   
     // Effect hook to handle window resizing
     useEffect(() => {
-      const handleResize = () => {
-        if(window.innerWidth < 1100){
-          setIsMobile(true);
-        }
-       
-        
+        const handleResize = () => {
+      // ➡️ The condition now sets the state directly
+      setIsMobile(window.innerWidth < 1100);
+  
       };
       window.addEventListener('resize', handleResize);
       return () => {
