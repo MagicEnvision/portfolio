@@ -4,13 +4,14 @@ import { motion } from "motion/react";
 const MagicEnvision = () => {
   return (
     <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 grid-rows-4 gap-4 sm:gap-6 py-5 ">
-      <div className=" flex justify-center items-center w-full border-[1px] rounded-[2rem] border-neutral-700
-           hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 bg-[#060606] col-span-1 row-span-1 md:col-span-2 md:row-span-2">
+      <div className=" flex justify-center items-center w border-[1px] rounded-[2rem] border-neutral-700
+           hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 bg-[#060606]  col-span-1 row-span-1 md:col-span-2 md:row-span-2 ">
         <ModelView
-        className={` `}
+        className={`h-full w-full`}
         model={"magic"}
         minPolarAngle={2.6}
-        maxPolarAngle={1.2}
+        maxPolarAngle={1.6}
+        fov={40}
       />
       </div>
       
@@ -41,8 +42,9 @@ const MagicEnvision = () => {
         <ModelView
           className={`p-2 col-span-1 row-span-1`}
           model={"bolts"}
-          minPolarAngle={2}
+          minPolarAngle={2.5}
           maxPolarAngle={1.5}
+          fov={40}
         />
       </div>
 
