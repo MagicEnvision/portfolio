@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#060606] p-1">
-      <div className="flex  sm:flex-row w-full max-w-xs md:max-w-3xl lg:max-w-[90rem] xl:max-w-[100rem] h-full max-h-[95vh] sm:h-auto text-white gap-3 sm:gap-5">
+      <div className="flex  sm:flex-row w-full max-w-xs sm:max-w-3xl xl:max-w-[80rem] 2xl:max-w-[100rem] h-full max-h-[95vh] sm:h-auto text-white gap-3 sm:gap-5">
         <div className= {`flex ${isMobile ? 'w-[15vw]' : 'w-[20vw]'}  border-[1px] border-neutral-700 justify-center rounded-[2rem] overflow-hidden my-4`}>
           <ul className="flex flex-col justify-between box-border w-full items-center bg-neutral-950  rounded-[2rem]">
 

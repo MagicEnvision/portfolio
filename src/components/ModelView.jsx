@@ -10,12 +10,12 @@ import Bolts from './Bolts'
 const ModelView = ({className , model, minPolarAngle, maxPolarAngle, fov }) => {
   
   const [autoRotate, setAutoRotate] = useState(true);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1100);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
 
   // Effect hook to handle window resizing
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1100);
+      setIsMobile(window.innerWidth < 1101);
     };
     window.addEventListener('resize', handleResize);
     return () => {
@@ -44,7 +44,7 @@ const ModelView = ({className , model, minPolarAngle, maxPolarAngle, fov }) => {
       <Canvas shadows dpr={[1, 4]}  camera={{fov: 50}}>
    
         <Suspense fallback={null}>
-           <Stage  preset="portrait" intensity={1}  environment="studio" adjustCamera={isMobile}>
+           <Stage  preset="portrait" intensity={1}  environment="studio" adjustCamera={true}>
             {modelList[model]}
            </Stage>
               <pointLight position={[10, 10, 10]} intensity={1.5} castShadow />
