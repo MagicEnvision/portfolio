@@ -42,7 +42,7 @@ function App() {
           <ul className="flex flex-col justify-between box-border w-full items-center bg-neutral-950  rounded-[2rem]">
 
             <div className='w-full flex flex-col flex-grow'>
-            <li className={`flex justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+            <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
              ${activePage === "me" ? 'bg-white text-3xl text-black transition-none' : ''}  `} onClick={() => setActivePage("me")}>
 
               {isMobile ? 
@@ -54,7 +54,7 @@ function App() {
               }
 
             </li>
-            <li className={`flex justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+            <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
              ${activePage === "projects" ? 'bg-white text-3xl text-black transition-none' : ''} `} onClick={() => setActivePage("projects")}>
 
               {isMobile ? 
@@ -65,7 +65,7 @@ function App() {
     
               }
             </li>
-            <li className={`flex justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+            <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
              ${activePage === "contact" ? 'bg-white text-3xl text-black transition-none' : ''} `} onClick={() => setActivePage("contact")}>
 
                {isMobile ? 
@@ -76,7 +76,7 @@ function App() {
                 }
             </li>
               
-            <li className={`flex justify-center items-center  border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+            <li className={`flex select-none justify-center items-center border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
              ${activePage === "magic" ? 'bg-white  text-black transition-none' : ''} `} onClick={() => setActivePage("magic")}>
 
               {isMobile ? 
@@ -91,7 +91,7 @@ function App() {
 
           </ul>
         </div>
-        <div className="flex w-full border-[1px] bg-neutral-950 border-neutral-700 justify-center rounded-[2rem] my-4 overflow-y-auto">
+        <div className="flex w-full border-[1px] bg-neutral-950 border-neutral-700 justify-center rounded-[2rem] my-4 overflow-x-hidden overflow-y-auto">
           <div className="w-full h-screen  rounded-[2rem] p-4 sm:p-6">
             {activePage === "me" && <WhatIDo />}
             {activePage === "projects" && <Projects />}

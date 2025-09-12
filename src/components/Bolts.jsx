@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei"
 import  * as THREE from 'three'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF("/bolts.glb");
+  const { nodes, materials } = useGLTF("bolts.glb");
   return (
     <group {...props} scale={1} dispose={null}>
       <mesh
@@ -37,4 +37,4 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload("/bolts.glb")
+useGLTF.preload("bolts.glb")

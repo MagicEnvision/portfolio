@@ -2,7 +2,7 @@ import React from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls, Stage } from '@react-three/drei'
-import Magic from './Magic'
+import Magic from './Magic.jsx'
 import { useState, useEffect} from 'react'
 import Bolts from './Bolts'
 

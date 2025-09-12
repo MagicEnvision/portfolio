@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const WhatIDo = () => {
   return (
     <div className="flex flex-col sm:gap-3">
-      <div className="flex flex-col flex-grow md:flex-nowrap lg:flex-row p-2 sm:p-5 sm:px-10 justify-center items-center gap-10 border-[1px] bg-[#060606] overflow-hidden rounded-[2rem] border-neutral-700 ">
+      <div className="flex flex-col flex-grow md:flex-nowrap lg:flex-row p-2 sm:p-5 sm:px-10 justify-center items-center gap-5 lg:gap-10 border-[1px] bg-[#060606] overflow-hidden rounded-[2rem] border-neutral-700 ">
         
         <div className="rounded-full flex-grow flex-shrink-0 bg-white overflow-hidden">
           <img src="https://placehold.co/200x200" alt="" />
@@ -56,24 +56,25 @@ const WhatIDo = () => {
               </span>
             </p>
           </div>
-
-
         </div>
-
-       
+      </div>
+      <div className="flex gap-3 flex-wrap">
+              <div className="bg-[#060606] h-[400px] flex-1 border-[1px] border-neutral-700 rounded-[2rem] p-3 flex justify-center items-center">Placeholder</div>
+              <div className="bg-[#060606] h-[400px] flex-1 border-[1px] border-neutral-700 rounded-[2rem] p-3 flex justify-center items-center">Placeholder</div>
+              <div className="bg-[#060606] h-[400px] flex-1 border-[1px] border-neutral-700 rounded-[2rem] p-3 flex justify-center items-center">Placeholder</div>
       </div>
       
-      <div className="flex w-full h-[100dvh] gap-4">
-        <div className="border-[1px] border-neutral-700 h-[400px] flex-grow bg-[#060606] rounded-[2rem]">
+      {/* <div className="flex flex-wrap w-full h-[100dvh] gap-4">
+        <div className="border-[1px] border-neutral-700 w-full md:w-[320px] h-[400px] flex-grow bg-[#060606] rounded-[2rem]">
           PlaceHolder
         </div>
-        <div className="border-[1px] border-neutral-700 h-[400px] flex-grow bg-[#060606] rounded-[2rem]">
+        <div className="border-[1px] border-neutral-700 w-full md:w-[320px] h-[400px] flex-grow bg-[#060606] rounded-[2rem]">
           PlaceHolder
         </div>
-        <div className="border-[1px] border-neutral-700 h-[400px] flex-grow bg-[#060606] rounded-[2rem]">
+        <div className="border-[1px] border-neutral-700 w-full md:w-[320px] h-[400px] flex-grow bg-[#060606] rounded-[2rem]">
           PlaceHolder
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

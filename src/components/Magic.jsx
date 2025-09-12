@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 import  * as THREE from 'three'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/magic.glb')
+  const { nodes, materials } = useGLTF('magic.glb')
   return (
 
     <group {...props} scale={1} dispose={null}
@@ -34,4 +34,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/magic.glb')
+useGLTF.preload('magic.glb')
