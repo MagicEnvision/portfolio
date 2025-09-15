@@ -92,7 +92,7 @@ function App() {
           </ul>
         </div>
         <div className="flex w-full border-[1px] bg-neutral-950 border-neutral-700 justify-center rounded-[2rem] my-4 overflow-x-hidden overflow-y-auto">
-          <div className="w-full h-screen  rounded-[2rem] p-4 sm:p-6">
+          <div className="w-full h-screen  rounded-[2rem] p-6 sm:p-6">
             {activePage === "me" && <WhatIDo />}
             {activePage === "projects" && <Projects />}
             {activePage === "contact" && <Contact />}
