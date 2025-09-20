@@ -3,36 +3,47 @@ import { motion } from "motion/react";
 import { randInt } from "three/src/math/MathUtils.js";
 const WhatIDo = () => {
  
-  const colours = [
-    "bg-blue-400",
-    "bg-red-500",
-    "bg-fuschia-700",
-    "bg-green-200",
-    "bg-teal-400",
-    "bg-sky-700",
-    "bg-orange-600"
-  ]
-  // hover:bg-blue-400 hover:bg-red-500 hover:bg-fuchsia-700 hover:bg-green-200 hover:bg-teal-400 hover:bg-sky-700 hover:bg-orange-600
-
+const colours = [
+  "bg-blue-600",
+  "bg-red-500",
+  "bg-fuchsia-700",
+  "bg-emerald-600",
+  "bg-indigo-600",
+  "bg-sky-600",
+  "bg-rose-600",
+  "bg-purple-600",
+  "bg-yellow-500",
+  "bg-teal-600",
+  "bg-orange-500",
+  "bg-cyan-500",
+  "bg-lime-500"
+];
+// hover:bg-blue-600 hover:bg-red-500 hover:bg-fuchsia-700 hover:bg-emerald-600 hover:bg-indigo-600 
+// hover:bg-sky-600 hover:bg-rose-600 hover:bg-purple-600 hover:bg-yellow-500 hover:bg-teal-600 
+// hover:bg-orange-500 hover:bg-cyan-500 hover:bg-lime-500
   const frontSkills = [ "React",
     "Three.js",
     "Tailwind",
     "GSAP",
     "Motion",
     "React Native",
-    "Next.Js"]
+    "Next.Js",
+    "TypeScript"]
   const backSkills = [
     "Node.js",
     "MongoDB",
     "PostGres",
     "express.js",
-    "Rest Api"
+    "Rest Api",
+    "Github"
   ]
   const miscSkills = [
     "Git",
     "PostMan",
     "3D Modeling",
     "Photoshop",
+    "Vercel",
+    "Docker"
   ]
   // const randomColour = () => {
   //   let colourList = ["red", "orange", "sky", "yellow", "lime",
@@ -124,12 +135,12 @@ const WhatIDo = () => {
             Front End Skills
           </h1>
           
-          <div className="flex flex-wrap text-center gap-2 justify-center">
+          <div className="flex flex-wrap text-center gap-2 gap-y-3 justify-center">
             {frontSkills.map((skill, _i) => {
-                            const randomColor = colours[Math.floor(Math.random() * colours.length)];
+                    const randomColor = colours[Math.floor(Math.random() * colours.length)];
               return (
               <p key={_i} className={`text-white text-xs sm:text-sm lg:text-md border-[1px] hover:-translate-y-1 
-             transition border-neutral-700 hover:${randomColor} p-[4px] lg:p-2 text-center rounded-full`}
+             transition border-neutral-700 hover:scale-105 hover:${randomColor} p-[4px] lg:p-2 text-center rounded-full`}
               >
                 {skill}
               </p>
@@ -153,25 +164,35 @@ const WhatIDo = () => {
           <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald  mb-2">
             Backend Skills
           </h1>
-          <div className="flex flex-wrap text-center gap-2 justify-center">
-            {backSkills.map((skill) => (
-              <p className="text-white text-xs sm:text-sm lg:text-md border-[1px] border-neutral-700 p-[4px] lg:p-2 text-center rounded-full">
+          <div className="flex flex-wrap text-center gap-2 gap-y-3 justify-center">
+             {backSkills.map((skill, _i) => {
+                    const randomColor = colours[Math.floor(Math.random() * colours.length)];
+              return (
+              <p key={_i} className={`text-white text-xs sm:text-sm lg:text-md border-[1px] hover:-translate-y-1 
+             transition border-neutral-700 hover:scale-105 hover:${randomColor} p-[4px] lg:p-2 text-center rounded-full`}
+              >
                 {skill}
               </p>
-            ))}
+              )
+            })}
           </div>
         </div>
         <div className="border-[1px] w-full flex flex-col justify-center row-span-1 col-span-1
          hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300  border-neutral-700 rounded-[2rem] py-2 px-4 sm:py-4 sm:px-6">
           <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald mb-2">
-            Miscellaneous Skills
+            Developer Tools
           </h1>
-          <div className="flex flex-wrap text-center gap-2 justify-center">
-            {miscSkills.map((skill) => (
-              <p className="text-white text-xs sm:text-sm lg:text-md border-[1px] border-neutral-700 p-[4px] lg:p-2 text-center rounded-full">
+          <div className="flex flex-wrap text-center gap-2 gap-y-3 justify-center">
+             {miscSkills.map((skill, _i) => {
+                    const randomColor = colours[Math.floor(Math.random() * colours.length)];
+              return (
+              <p key={_i} className={`text-white text-xs sm:text-sm lg:text-md border-[1px] hover:-translate-y-1 
+             transition border-neutral-700 hover:scale-105 hover:${randomColor} p-[4px] lg:p-2 text-center rounded-full`}
+              >
                 {skill}
               </p>
-            ))}
+              )
+            })}
           </div>
         </div>
         <div className="border-[1px] w-full row-span-1 col-span-1
