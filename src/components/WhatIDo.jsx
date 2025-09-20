@@ -1,15 +1,26 @@
-import React from "react";
+import React, {}from "react";
 import { motion } from "motion/react";
+import { randInt } from "three/src/math/MathUtils.js";
 const WhatIDo = () => {
-  const frontSkills = [
-    "React",
+ 
+  const colours = [
+    "bg-blue-400",
+    "bg-red-500",
+    "bg-fuschia-700",
+    "bg-green-200",
+    "bg-teal-400",
+    "bg-sky-700",
+    "bg-orange-600"
+  ]
+  // hover:bg-blue-400 hover:bg-red-500 hover:bg-fuchsia-700 hover:bg-green-200 hover:bg-teal-400 hover:bg-sky-700 hover:bg-orange-600
+
+  const frontSkills = [ "React",
     "Three.js",
     "Tailwind",
     "GSAP",
     "Motion",
     "React Native",
-    "Next.Js"
-  ];
+    "Next.Js"]
   const backSkills = [
     "Node.js",
     "MongoDB",
@@ -23,9 +34,32 @@ const WhatIDo = () => {
     "3D Modeling",
     "Photoshop",
   ]
+  // const randomColour = () => {
+  //   let colourList = ["red", "orange", "sky", "yellow", "lime",
+  //      "green", "teal", "emerald", "rose", "pink", "purple",
+  //       "fushcia","cyan", "indigo"]
+  //   let numbers = ["400", "500", "600", "700", "800", "900"]
+    
+  //   let colour = colourList[randInt(0,13)] 
+  //   let number = numbers[randInt(0,5)]
+
+  //   let tailwind = []
+  //   for(let i = 0; i < 14; i++){
+  //     let colour = colourList[randInt(0,13)] 
+  //     let number = numbers[randInt(0,5)]
+
+  //     tailwind.push(`bg-${colour}-${number}`)
+  //   }
+   
+  //   return(tailwind[randInt(0,12)])
+   
+
+  // }
+
+  
 
   return (
-    <div className="flex flex-col gap-3 sm:gap-3">
+    <div className="flex flex-col bg-gap-3 bg- sm:gap-3">
       <div className="flex flex-col flex-grow md:flex-nowrap lg:flex-row p-2 sm:p-5 sm:px-10 justify-center items-center gap-5 lg:gap-10 border-[1px] bg-[#060606] 
        hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 overflow-hidden rounded-[2rem] border-neutral-700 ">
         <div className="rounded-full flex-grow flex-shrink-0 bg-white overflow-hidden">
@@ -91,11 +125,16 @@ const WhatIDo = () => {
           </h1>
           
           <div className="flex flex-wrap text-center gap-2 justify-center">
-            {frontSkills.map((skill) => (
-              <p className="text-white text-xs sm:text-sm lg:text-md border-[1px] border-neutral-700 p-[4px] lg:p-2 text-center rounded-full">
+            {frontSkills.map((skill, _i) => {
+                            const randomColor = colours[Math.floor(Math.random() * colours.length)];
+              return (
+              <p key={_i} className={`text-white text-xs sm:text-sm lg:text-md border-[1px] hover:-translate-y-1 
+             transition border-neutral-700 hover:${randomColor} p-[4px] lg:p-2 text-center rounded-full`}
+              >
                 {skill}
               </p>
-            ))}
+              )
+            })}
           </div>
         </div>
        
@@ -164,5 +203,7 @@ const WhatIDo = () => {
     </div>
   );
 };
+
+
 
 export default WhatIDo;
