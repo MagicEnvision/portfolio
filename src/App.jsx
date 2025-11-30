@@ -43,19 +43,19 @@ function App() {
 
             <div className='w-full flex flex-col flex-grow'>
             <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "me" ? 'bg-white text-3xl text-black transition-none' : ''}  `} onClick={() => setActivePage("me")}>
+             ${activePage === "me" ? 'bg-neutral-700 text-3xl transition-none hover:scale-125' : ''}  `} onClick={() => setActivePage("me")}>
 
               {isMobile ? 
               (<HiMiniHome size={24}/>)
                 
               :
-              (<p className='transition duration-300 ease-in-out delay-110 hover:scale-125'>What I Do</p>)
+              (<p className='transition duration-300 ease-in-out delay-110 '>What I Do</p>)
     
               }
 
             </li>
             <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "projects" ? 'bg-white text-3xl text-black transition-none' : ''} `} onClick={() => setActivePage("projects")}>
+             ${activePage === "projects" ? 'bg-neutral-700 text-3xl transition-none' : ''} `} onClick={() => setActivePage("projects")}>
 
               {isMobile ? 
               (activePage === "projects" ? <FaFolderOpen /> : <FaFolderClosed />)
@@ -66,7 +66,7 @@ function App() {
               }
             </li>
             <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "contact" ? 'bg-white text-3xl text-black transition-none' : ''} `} onClick={() => setActivePage("contact")}>
+             ${activePage === "contact" ? 'bg-neutral-700 text-3xl transition-none' : ''} `} onClick={() => setActivePage("contact")}>
 
                {isMobile ? 
               (<IoMdContact size={24}/>)
@@ -77,7 +77,7 @@ function App() {
             </li>
               
             <li className={`flex select-none justify-center items-center border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "magic" ? 'bg-white  text-black transition-none' : ''} `} onClick={() => setActivePage("magic")}>
+             ${activePage === "magic" ? 'bg-neutral-700  text-blion-none' : ''} `} onClick={() => setActivePage("magic")}>
 
               {isMobile ? 
               ( <FaMagic size={24}/> )

@@ -28,10 +28,11 @@ const MagicEnvision = () => {
           <br />
         </h1>
         <div className="border-t-[1px] border-neutral-600 my-2 w-full" />
-        <p className="text-md  leading-4 md:leading-6 font-extralight text-center tracking-tight">
+        <p className="text-md leading-4 md:leading-6 font-extralight text-center tracking-tight">
           {" "}
-          In my sparetime I love to create design, create, and manufacture my
-          own clothing. Started my sewing journey in 2020 and Ive loved it{" "}
+          I create/rework clothing when I'm not working on code. 
+          It's a passion of mine eversince I learned how to sew.
+          {" "}
         </p>
       </div>
 
@@ -50,13 +51,17 @@ const MagicEnvision = () => {
 
       <div
         className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
-       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full col-span-2 row-span-1 lg:col-span-1 bg-[#060606] "
+       hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full col-span-2 row-span-1 lg:col-span-1 bg-[#060606] p-4"
       >
-        <h1 className="text-lg  text-center font-oswald font-extrabold italic sm:text-xl ">
-          1
+         <h1 className="text-md md:text-2xl tracking-tight text-center font-oswald font-extrabold italic ">
+          Definition
+          <br />
         </h1>
-      </div>
+        <div className="border-t-[1px] border-neutral-600 my-2 w-full" />
+        <p className="text-md leading-4 md:leading-6 font-extralight text-center tracking-tight"> Magic: The power to create something magical within everybody.</p>
+        <p className="text-md leading-4 md:leading-6 font-extralight text-center tracking-tight">Envision: To envision a greater future.</p>
 
+      </div>
       <div
         className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
        hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full  col-span-1 row-span-1 lg:col-span-2 bg-[#060606] "
