@@ -91,7 +91,7 @@ const colours = [
             </motion.span>
 
             <motion.span
-              className="text-sm xl:text-2xl font-semibold sm:font-bold leading-4 italic text-center"
+              className="text-sm xl:text-2xl font-semibold sm:font-bold leading-4  text-center"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -131,7 +131,7 @@ const colours = [
        
         <div className="border-[1px] w-full row-span-1 col-span-1
          hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 border-neutral-700 rounded-[2rem] py-2 px-4 sm:py-4 sm:px-6">
-          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald sm:font-semibold mb-2">
+          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left sm:font-semibold mb-2">
             Front End Skills
           </h1>
           
@@ -161,7 +161,7 @@ const colours = [
         </div>
         <div className="border-[1px] w-full flex flex-col justify-center row-span-1 col-span-1
          hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 border-neutral-700 rounded-[2rem] py-2 px-4 sm:py-4 sm:px-6">
-          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald  mb-2">
+          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left  mb-2">
             Backend Skills
           </h1>
           <div className="flex flex-wrap text-center gap-2 gap-y-3 justify-center">
@@ -179,7 +179,7 @@ const colours = [
         </div>
         <div className="border-[1px] w-full flex flex-col justify-center row-span-1 col-span-1
          hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300  border-neutral-700 rounded-[2rem] py-2 px-4 sm:py-4 sm:px-6">
-          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald mb-2">
+          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left mb-2">
             Developer Tools
           </h1>
           <div className="flex flex-wrap text-center gap-2 gap-y-3 justify-center">
@@ -197,14 +197,14 @@ const colours = [
         </div>
         <div className="border-[1px] w-full row-span-1 col-span-1
          hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 border-neutral-700 rounded-[2rem] py-2 px-4 sm:py-4 sm:px-6">
-          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald mb-2">
+          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left mb-2">
             PlaceHolder
           </h1>
          
         </div>
         <div className="border-[1px] w-full row-span-1 col-span-1
          hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300  border-neutral-700 rounded-[2rem] py-2 px-4 sm:py-4 sm:px-6 mb-4">
-          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left font-oswald mb-2">
+          <h1 className="text-md font-bold sm:text-2xl text-center md:text-left mb-2">
             PlaceHolder
           </h1>
         </div> 

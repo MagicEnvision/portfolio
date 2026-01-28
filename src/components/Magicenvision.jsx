@@ -20,11 +20,11 @@ const MagicEnvision = () => {
         className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
        hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full bg-[#060606] col-span-1 row-span-1 p-4">
 
-        <h1 className="text-md md:text-2xl tracking-tight text-center font-oswald font-extrabold italic ">
+        <h1 className="text-md md:text-2xl tracking-tight text-center font-extralight  ">
           Magic Envision{" "}
-          <span className="text-sm md:text-xl tracking-tight font-light">
+          {/* <span className="text-sm md:text-xl tracking-tight font-light">
             {""}Clothing Brand
-          </span>
+          </span> */}
           <br />
         </h1>
         <div className="border-t-[1px] border-neutral-600 my-2 w-full" />
@@ -53,8 +53,8 @@ const MagicEnvision = () => {
         className="border-[1px] rounded-[2rem] flex justify-center items-center flex-col border-neutral-700 
        hover:shadow-[0px_0px_5px_0px_#EDEDED] transition-all duration-300 w-full col-span-2 row-span-1 lg:col-span-1 bg-[#060606] p-4"
       >
-         <h1 className="text-md md:text-2xl tracking-tight text-center font-oswald font-extrabold italic ">
-          Definition
+         <h1 className="text-md md:text-2xl tracking-tight text-center font-extralight  ">
+          Meaning
           <br />
         </h1>
         <div className="border-t-[1px] border-neutral-600 my-2 w-full" />

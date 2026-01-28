@@ -42,20 +42,20 @@ function App() {
           <ul className="flex flex-col justify-between box-border w-full items-center bg-neutral-950  rounded-[2rem]">
 
             <div className='w-full flex flex-col flex-grow'>
-            <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "me" ? 'bg-neutral-700 text-3xl transition-none hover:scale-125' : ''}  `} onClick={() => setActivePage("me")}>
+            <li className={`flex select-none justify-center items-center font-bold  tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+             ${activePage === "me" ? 'bg-blue-600 text-3xl transition-none' : ''}  `} onClick={() => setActivePage("me")}>
 
               {isMobile ? 
               (<HiMiniHome size={24}/>)
                 
               :
-              (<p className='transition duration-300 ease-in-out delay-110 '>What I Do</p>)
+              (<p className='transition duration-300 ease-in-out delay-110 hover:scale-125'>What I Do</p>)
     
               }
 
             </li>
-            <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "projects" ? 'bg-neutral-700 text-3xl transition-none' : ''} `} onClick={() => setActivePage("projects")}>
+            <li className={`flex select-none justify-center items-center font-bold  tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+             ${activePage === "projects" ? 'bg-green-600 text-3xl transition-none' : ''} `} onClick={() => setActivePage("projects")}>
 
               {isMobile ? 
               (activePage === "projects" ? <FaFolderOpen /> : <FaFolderClosed />)
@@ -65,8 +65,8 @@ function App() {
     
               }
             </li>
-            <li className={`flex select-none justify-center items-center font-bold font-oswald tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "contact" ? 'bg-neutral-700 text-3xl transition-none' : ''} `} onClick={() => setActivePage("contact")}>
+            <li className={`flex select-none justify-center items-center font-bold  tracking-tighter border-b-[1px] border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
+             ${activePage === "contact" ? 'bg-pink-700 text-3xl transition-none' : ''} `} onClick={() => setActivePage("contact")}>
 
                {isMobile ? 
               (<IoMdContact size={24}/>)
@@ -77,13 +77,13 @@ function App() {
             </li>
               
             <li className={`flex select-none justify-center items-center border-neutral-700 text-2xl w-full text-center p-0 sm:p-5 h-full cursor-pointer 
-             ${activePage === "magic" ? 'bg-neutral-700  text-blion-none' : ''} `} onClick={() => setActivePage("magic")}>
+             ${activePage === "magic" ? 'bg-red-700  text-blion-none' : ''} `} onClick={() => setActivePage("magic")}>
 
               {isMobile ? 
               ( <FaMagic size={24}/> )
                 
               :
-              (<p className='font-bold font-oswald tracking-tighter transition duration-300 ease-in-out delay-110 hover:scale-125'>Clothing Brand</p>)
+              (<p className='font-bold  tracking-tighter transition duration-300 ease-in-out delay-110 hover:scale-125'>Clothing Brand</p>)
                 }
             </li> 
             </div>
@@ -92,7 +92,7 @@ function App() {
           </ul>
         </div>
         <div className="flex w-full border-[1px] bg-neutral-950 border-neutral-700 justify-center rounded-[2rem] my-4 overflow-x-hidden overflow-y-auto">
-          <div className="w-full h-screen  rounded-[2rem] p-6 sm:p-6">
+          <div className="w-full h-screen rounded-[2rem] p-6 sm:p-6">
             {activePage === "me" && <WhatIDo />}
             {activePage === "projects" && <Projects />}
             {activePage === "contact" && <Contact />}
