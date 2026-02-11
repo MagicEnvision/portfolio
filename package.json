@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://magicenvision.github.io/portfolio",
+  "homepage": "https://magicenvision.github.io/portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
