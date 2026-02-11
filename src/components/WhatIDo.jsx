@@ -41,7 +41,7 @@ const colours = [
     "Git",
     "PostMan",
     "3D Modeling",
-    "Photoshop",
+    "Adobe Tools",
     "Vercel",
     "Docker"
   ]
@@ -100,23 +100,23 @@ const colours = [
                 scale: { type: "spring", visualDuration: 0.2, bounce: 0.2 },
               }}
             >
-              Full Stack Web Enthusiast
+              Full Stack Web Creator
             </motion.span>
           </h1>
           <div className="w-[90%] sm:w-full mx-auto border-t-[1px] my-[4px]" />
 
           <div className="flex flex-col justify-center items-center  ">
             <p className="text-center text-xs sm:text-[0.9rem]">
-              {" "}
+              {/* {" "}
               I graduated from{" "}
               <span className="font-semibold">George Brown College </span>
               with a diploma in{" "}
               <span className="font-semibold">Computer Science </span>
               and have been working as a{" "}
               <span className="font-semibold ">
-                React full-stack developer{" "}
-              </span>
-              for the past 3 years. I specialize in building modern, responsive,
+                React full-stack developer{"for the past 3 years. "}
+              </span> */}
+               I specialize in building modern, responsive,
               and scalable web applications while focusing on clean code and
               user-friendly experiences.{" "}
               <span className="hidden 2xl:inline">
